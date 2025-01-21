@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f0f8ff; */
+    background-image: url('/1\ img.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Heading Style */
+  .heading {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+ 
+  /* Input & Button Container */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  /* Input Field */
+  .input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.74); 
+  
+  }
+  
+  /* Input Focus Effect */
+  .input:focus {
+     border-color: #60d5f9; 
+    box-shadow: 0 0 8px rgba(96, 213, 249, 0.733);
+  }
+  
+  /* Button Style */
+  .button {
+     background-color: black; 
+    background-image: linear-gradient(135deg, #f9607c, #06020849);
+    border: none;
+    padding: 15px 25px;
+    font-size: 14px;
+     color: white;  
+    font-weight: bold;
+     border-radius: 25px; 
+    cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;  
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }
+  
+  .button:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .button:active {
+     transform: translateY(1px); 
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Error Message Style */
+  .error {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Weather Data Styling */
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:transparent; /* semi-transparent white */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50%; /* responsive width */
+    max-width: 350px; /* max width */
+    margin: 20px auto; /* center the container */
+    color: black;
+    font-weight: bold;
+    justify-content: center;
+    min-height: 150px; /* ensure enough height */
+}
+
+.center:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 35px;
+    }
+  
+    .input {
+      width: 80%;
+      font-size: 14px;
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .center {
+      width: 80%;
+    }
+  }
